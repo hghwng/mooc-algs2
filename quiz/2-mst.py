@@ -84,44 +84,46 @@ def prim(graph, start):
     print()
 
 q1 = '''
-    A-B    17
-    A-F    15
-    F-B    11
-    G-B     7
-    C-B     5
-    B-H     4
-    C-H     6
-    D-C     2
-    I-C     1
-    E-D    16
-    D-J    12
-    I-D     8
-    J-E    13
-    F-G     9
-    H-G    14
-    H-I     3
-    I-J    10'''
+    F-A    15
+    A-B     5
+    A-G     3
+    B-G     6
+    C-B     4
+    D-C    17
+    I-C    10
+    C-H     7
+    G-C     2
+    E-D    12
+    D-I    11
+    D-J     9
+    J-E    14
+    G-F    16
+    G-H    13
+    H-I     1
+    I-J     8
+'''
 
 q2 = '''
-    A-F      16
-    A-B      13
-    B-G      12
-    H-B       9
-    F-B       6
-    C-B       4
-    I-C      15
-    C-D       7
-    H-C       1
-    D-J      17
-    E-D      10
-    D-I       3
-    E-J       8
-    F-G       5
-    H-G      11
-    I-H      14
-    J-I       2'''
+    B-A      16
+    A-F      13
+    C-B      12
+    B-G      11
+    H-B      10
+    F-B       3
+    C-D       6
+    C-H       5
+    I-C       2
+    D-I      15
+    D-E       8
+    E-J       9
+    I-E       1
+    G-F      17
+    G-H       7
+    I-H       4
+    I-J      14
+'''
 
-q2_start = 'F'
+q2_start = 'D'
 
 kruskal(make_graph(q1)[1])
 prim(make_graph(q2)[0], ord(q2_start) - ord('A'))
